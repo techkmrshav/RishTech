@@ -8,7 +8,23 @@
     <meta name="keywords" content="web development India, app development, AI ML solutions, cloud services, cybersecurity, IT consulting, Rish Tech, technology services India" />
     <meta name="author" content="Rish Tech" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#ffffff" />
+    <!-- 'theme-color' is not supported by Firefox/Opera, so use 'color-scheme' and CSS background fallback -->
+    <meta name="color-scheme" content="light dark" />
+    <style>
+      html {
+        background-color: #fff; /* fallback for browsers not supporting prefers-color-scheme */
+      }
+      @media (prefers-color-scheme: dark) {
+        html {
+          background-color: #222;
+        }
+      }
+      @media (prefers-color-scheme: light) {
+        html {
+          background-color: #fff;
+        }
+      }
+    </style>
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Rish Tech - Where Ideas Meet Technology" />
